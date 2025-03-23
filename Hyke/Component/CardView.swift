@@ -3,8 +3,7 @@
 //  Hyke
 //
 //  Created by Carlo Contardi on 22/03/25.
-//
-
+//  https://www.spacecoding.it
 import SwiftUI
 
 struct CardView: View {
@@ -14,8 +13,16 @@ struct CardView: View {
     @State private var randomNumber: Int = 1
     // MARK: - FUNCTIONS
     func randomImage(){
-        randomNumber = Int.random(in: 1...5)
+        print("--- BUTTON WAS PRESSED ---")
+        print("Status: Old Image Number = \(imageNumber)")
+        repeat{
+            randomNumber = Int.random(in: 1...5)
+            print("Action: Random Number Generated = \(randomNumber)")
+        }while randomNumber == imageNumber
         imageNumber = randomNumber
+        print("Result: New Image Number = \(imageNumber)")
+        print("--- THE END ---")
+        print("\n")
     }
     var body: some View {
         // MARK: - CARD
@@ -58,7 +65,6 @@ struct CardView: View {
                 // MARK: - FOOTER
                 Button{
                     // ACTION: Generate a random number
-                    print("The button was presses.")
                     randomImage()
                 }label: {
                     Text("Explore More")
