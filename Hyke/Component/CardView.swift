@@ -47,6 +47,8 @@ struct CardView: View {
                         }
                         .sheet(isPresented: $isShowingSheet){
                             SettingsView()
+                                .presentationDragIndicator(.visible) // aggiunge il simbolo che indica all'utente che è possibile fare lo swipe verso il basso per tornare alla vista precedente
+                                .presentationDetents([.medium, .large])
                         }
                     }
                     Text("Fun and enjoyable outdoor activity for friends and families.")
