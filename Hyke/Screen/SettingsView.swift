@@ -63,12 +63,12 @@ struct SettingsView: View {
                 
                 // 2. Advaced Labeled Content
                 CustomListRowView(rowLabel: "Application", rowIcon: "apps.iphone", rowContent: "HIKE", rowTintColor: .blue)
-                CustomListRowView(rowLabel: "Compatibility", rowIcon: "info.circle", rowContent: "iOSm iPadOS", rowTintColor: .red)
+                CustomListRowView(rowLabel: "Compatibility", rowIcon: "info.circle", rowContent: "iOS, iPadOS", rowTintColor: .red)
                 CustomListRowView(rowLabel: "Technology", rowIcon: "swift", rowContent: "Swift", rowTintColor: .orange)
-                CustomListRowView(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0", rowTintColor: .purple)
+                CustomListRowView(rowLabel: "Version", rowIcon: "gear", rowContent: "1.0.0", rowTintColor: .purple)
                 CustomListRowView(rowLabel: "Developer", rowIcon: "ellipsis.curlybraces", rowContent: "Carlo Contardi", rowTintColor: .mint)
-                CustomListRowView(rowLabel: "Designer", rowIcon: "paintpalette", rowContent: "John Doe", rowTintColor: .pink)
-                CustomListRowView(rowLabel: "Website", rowIcon: "globe", rowContent: "https://spacecoding.it", rowTintColor: .indigo)
+                CustomListRowView(rowLabel: "Designer", rowIcon: "paintpalette", rowContent: "Carlo Contardi", rowTintColor: .pink)
+                CustomListRowView(rowLabel: "Website", rowIcon: "globe",   rowTintColor: .indigo, rowLinkLabel: "SpaceCoding", rowLinkDestination: "https://www.spacecoding.it")
             }//: SECTION
         }//: LIST
         
